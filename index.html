@@ -19,7 +19,59 @@
     </header>
 
     <main>
-        <input type="text">
+        <select name="filtre" id="filtre">
+            <option value="trier_entree">Trier par entrées</option>
+            <option value="trier_plat">Trier par plat</option>
+            <option value="trier_dessert">Trier par dessert</option>
+        </select>
+        <div class="ajout">
+            <input type="text" placeholder="Entrez le nom du plat...">
+            <select name="type" id="type">
+                <option value="choisiseztype">Choisisez un type de plat</option>
+                <option value="entree">Entrée</option>
+                <option value="plat">Plat</option>
+                <option value="dessert">Dessert</option>
+            </select>
+            <select name="ingredient_1" id="ingredient_1">
+                <option value="choisisez1">Choisisez ingrédient 1</option>
+                <option value="salade">Salade</option>
+                <option value="tomate">Tomate</option>
+                <option value="oignon">Oignon</option>
+            </select>
+            <select name="ingredient_2" id="ingredient_2">
+                <option value="choisisez2">Choisisez ingrédient 2</option>
+                <option value="entree">Oeuf</option>
+                <option value="plat">Champignon</option>
+                <option value="carrotes">Carottes</option>
+            </select>
+            <select name="ingredient_3" id="ingredient_3">
+                <option value="choisisez3">Choisisez ingrédient 3</option>
+                <option value="porc">Porc</option>
+                <option value="boeuf">Boeuf</option>
+                <option value="canard">Canard</option>
+            </select>
+            <button class="button_add">Ajouter</button>
+        </div>
+        <div class="table">
+            <div class="top">
+                <div>
+                    <h3>Nom</h3>
+                </div>
+                <div>
+                    <h3>Type de plat</h3>
+                </div>
+                <div>
+                    <h3>Ingrédient 1</h3>
+                </div>
+                <div>
+                    <h3>Ingrédient 2</h3>
+                </div>
+                <div>
+                    <h3>Ingrédient 3</h3>
+                </div>
+                <div></div>
+            </div>
+        </div>
     </main>
     
 </body>

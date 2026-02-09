@@ -44,4 +44,101 @@ header{
 /* ###### Main ###### */
 main{
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    #filtre{
+        align-self: flex-end;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .ajout{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 25px 0;
+        
+        input{
+            width: 175px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            border: 1px solid var(--Black);
+            outline: none;
+        }
+        select{
+            width: 250px;
+            padding: 10px 20px 10px 10px;
+            background-color: var(--Background);
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button{
+            background-color: var(--White);
+            color: var(--Background);
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2px solid var(--Background);
+            transition: background-color ease-in 300ms, color ease-in 300ms;
+        }
+        button:hover{
+            background-color: var(--Background);
+            color: var(--White);
+            border-color: var(--White);
+        }
+    }
+    .table{
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        width: 100%;
+        border: 1px solid var(--Black);
+
+        .top{
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid var(--Black);
+
+            div{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+            }
+        }
+        .ligne{
+            display: flex;
+
+            div{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+
+                button{
+                    padding: 5px 10px;
+                    background-color: var(--White);
+                    border: none;
+                    border: 3px solid var(--Background);
+                    color: var(--Background);
+                    font-size: 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: var(--Background);
+                    color: white;
+                }
+            }
+        }
+    }
 }
