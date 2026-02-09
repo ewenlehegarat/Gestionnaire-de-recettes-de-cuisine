@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* ###### Global ###### */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    /* ### Color ### */
+    --White: #fff;
+    --Black: #000;
+    --Background: #fdc292;
+
+}
+
+/* ###### Body ###### */
+body{
+    background-color: var(--White);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* ###### Header ###### */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Background);
+    padding: 10px 15px;
+    color: var(--White);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0562);
+
+    ion-icon{
+        background-color: var(--Background);
+        border: 2px solid var(--White);
+        padding: 5px;
+        font-size: 20px;
+        border-radius: 50%;
+    }
+}
+
+/* ###### Main ###### */
+main{
+    padding: 15px;
+}
