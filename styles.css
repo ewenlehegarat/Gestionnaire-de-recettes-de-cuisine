@@ -8,12 +8,10 @@
 }
 
 :root{
-    
     /* ### Color ### */
     --White: #fff;
     --Black: #000;
     --Background: #fdc292;
-
 }
 
 /* ###### Body ###### */
@@ -47,11 +45,6 @@ main{
     display: flex;
     flex-direction: column;
 
-    #filtre{
-        align-self: flex-end;
-        cursor: pointer;
-        padding: 5px;
-    }
     .ajout{
         display: flex;
         justify-content: center;
@@ -97,6 +90,7 @@ main{
         display: flex;
         flex-direction: column;
         overflow: scroll;
+        scroll-behavior: auto;
         width: 100%;
         border: 1px solid var(--Black);
 
@@ -114,31 +108,62 @@ main{
                 padding: 0 15px;
             }
         }
-        .ligne{
+        .lign{
             display: flex;
 
             div{
                 width: 100%;
                 height: 50px;
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
                 padding: 0 15px;
 
-                button{
-                    padding: 5px 10px;
-                    background-color: var(--White);
-                    border: none;
-                    border: 3px solid var(--Background);
-                    color: var(--Background);
-                    font-size: 20px;
-                    border-radius: 10px;
-                    cursor: pointer;
-                }
                 button:hover{
                     background-color: var(--Background);
                     color: white;
                 }
             }
+            ion-icon{
+                font-size: 25px;
+                cursor: pointer;
+            }
+            ion-icon:first-child:hover{
+                color: #fc9643;
+            }
+            ion-icon:last-child:hover{
+                color: red;
+            }
         }
+    }
+}
+
+/* ###### Toast ###### */
+.toast{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    right: 15px;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 5px;
+    transition: top ease-in 300ms;
+
+    ion-icon{
+        font-size: 20px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .toast_close{
+        cursor: pointer;
+    }
+    .toast_close:hover{
+        color: var(--White);
     }
 }
