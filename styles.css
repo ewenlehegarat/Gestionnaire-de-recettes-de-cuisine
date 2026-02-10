@@ -78,7 +78,6 @@ main{
             border-radius: 10px;
             cursor: pointer;
             border: 2px solid var(--Background);
-            transition: background-color ease-in 300ms, color ease-in 300ms;
         }
         button:hover{
             background-color: var(--Background);

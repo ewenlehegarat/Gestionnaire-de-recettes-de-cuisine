@@ -9,6 +9,7 @@ const ajoutInput = document.querySelector('.ajout input')
 const toast = document.querySelector('.toast')
 const toastIon = document.querySelector('.toast ion-icon')
 const toastP = document.querySelector('.toast p')
+const editIcon = document.createElement('ion-icon')
 
 function createCell(text = '') {
     const div = document.createElement('div')
@@ -22,7 +23,6 @@ function createActions(lign) {
     const div = document.createElement('div')
     div.classList.add('actions')
 
-    const editIcon = document.createElement('ion-icon')
     editIcon.name = 'create-outline'
 
     const deleteIcon = document.createElement('ion-icon')
@@ -94,7 +94,6 @@ buttonAdd.addEventListener('click', () => {
         return
     }
 
-    // ✅ Création de la ligne
     const lign = document.createElement('div')
     lign.classList.add('lign')
 
